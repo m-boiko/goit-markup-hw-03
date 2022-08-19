@@ -1,0 +1,338 @@
+/* =========PRIMARY COLORS========= */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --black-logo-color: #000000;
+  --btn-filter-background-color: #f5f4fa;
+  --solution-section-color: #2f303a;
+}
+/* =========/PRIMARY COLORS========= */
+
+/* =========BODY========= */
+body {
+  color: var(--primary-white-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+/* =========/BODY========= */
+
+/* ========= OVERAL ========= */
+
+/* ======================= ПЕРЕБИТЬ ВСЕ КОМЕНТЫ ПО СЕКЦИЯМ +++++++++++++++++++ */
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* .link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+li {
+  list-style: none;
+} */
+
+/* ========= / OVERAL ========= */
+
+/* ========= HEADER ========= */
+.page-header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.page-header-container {
+  display: flex;
+  align-items: center;
+}
+
+.page-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 93px;
+}
+
+.header-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--black-logo-color);
+  text-decoration: none;
+}
+.header-logo-web {
+  color: var(--accent-color);
+}
+
+.footer-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--primary-white-color);
+  text-decoration: none;
+}
+.footer-logo-web {
+  color: var(--accent-color);
+}
+
+/* ========= NAVIGATION ========= */
+.navigation li {
+  list-style-type: none;
+}
+
+.navigation {
+  display: flex;
+  column-gap: 50px;
+}
+
+.mail-phone-link {
+  display: flex;
+  column-gap: 50px;
+  margin-left: auto;
+}
+
+.navigation .link {
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+
+.contact-mail {
+  margin-left: auto;
+}
+
+.navigation .link:focus,
+.navigation .link:hover {
+  color: var(--accent-color);
+}
+
+.navigation .link.curent {
+  color: var(--accent-color);
+}
+/* ========= / HEADER ========= */
+
+/* ========= SECTION SOLUTION ========= */
+
+.solution {
+  background-color: var(--solution-section-color);
+}
+
+.solution-container {
+  height: 600px;
+}
+
+.solution h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.odrder-button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* ========= / SECTION SOLUTION ========= */
+
+/* ========= /SECTION SPECIFICS ========= */
+.specifics {
+  background-color: tomato;
+}
+.specifics-container {
+  margin-bottom: 25px;
+  margin-top: 25px;
+  column-gap: 30px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+.specifics-list-item {
+  display: flex;
+}
+.title-section {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--title-text-color);
+}
+
+.specifics li {
+  list-style-type: none;
+}
+.specifics h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1px;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.specifics p {
+  line-height: 2;
+}
+/* ========= / SECTION SPECIFICS ========= */
+
+/* ========= SECTION SERVICES ========= */
+.services li {
+  list-style-type: none;
+}
+
+.services {
+  background-color: teal;
+}
+
+.services-list-item {
+  display: flex;
+}
+
+/* ========= /SECTION SERVICES ========= */
+
+/* ========= SECTION TEAM ========= */
+.team-list {
+  display: flex;
+}
+
+.team {
+  color: var(--primary-text-color);
+  background-color: tomato;
+}
+.team li {
+  list-style-type: none;
+}
+
+.team h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--title-text-color);
+}
+
+.team p {
+  font-size: 16px;
+  line-height: 1.2px;
+}
+/* ========= / SECTION TEAM ========= */
+
+/* ========= SECTION FOOTER ========= */
+
+.page-footer {
+  background-color: teal;
+}
+
+.link-address a {
+  font-style: normal;
+  font-family: "Roboto";
+  line-height: 2;
+  color: var(--primary-white-color);
+  text-decoration: none;
+}
+.link-address a:hover,
+.link-address a:focus {
+  color: var(--accent-color);
+}
+
+.bottom-contacts a {
+  font-family: "Roboto";
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-style: normal;
+}
+.bottom-contacts a:focus,
+.bottom-contacts a:hover {
+  color: var(--accent-color);
+}
+.bottom-contacts li {
+  list-style-type: none;
+}
+/* ========= / SECTION FOOTER ========= */
+
+/* ==================================== / INDEX HTML========================= */
+
+/* ====================================== PORTFOLIO HTML ======================= */
+
+/* ========= FILTERS ========= */
+.filters li {
+  list-style: none;
+}
+
+.filters button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--title-text-color);
+  background: var(--btn-filter-background-color);
+  cursor: pointer;
+}
+.filters button:hover,
+.filters button:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+/* ========= / FILTERS ========= */
+
+/* ========= SECTION GALERY ========= */
+.gallery li {
+  list-style-type: none;
+}
+.gallery h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.gallery p {
+  font-size: 16px;
+  line-height: 1.9;
+}
+/* ========= / SECTION GALERY ========= */
+
+/* ========= / PORTFOLIO HTML========= */
