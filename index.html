@@ -54,36 +54,38 @@
     <main>
       <section class="solution">
         <div class="container solution-container">
-          <h1>Ефективні рішення для вашого бізнесу</h1>
-          <button class="odrder-button" type="button">Замовити послугу</button>
+          <h1 class="solution-title">Ефективні рішення для вашого бізнесу</h1>
+          <button class="odrder-button solution-order-button" type="button">
+            Замовити послугу
+          </button>
         </div>
       </section>
 
       <section class="specifics">
         <div class="container specifics-container">
           <h2 hidden>Особливості</h2>
-          <ul class="specifics-list-item">
-            <li>
+          <ul class="specifics-list">
+            <li class="specifics-list-card">
               <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
               <p>
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li>
+            <li class="specifics-list-card">
               <h3>ПУНКТУАЛЬНІСТЬ</h3>
               <p>
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li>
+            <li class="specifics-list-card">
               <h3>ПЛАНУВАННЯ</h3>
               <p>
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li>
+            <li class="specifics-list-card">
               <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p>
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -95,58 +97,60 @@
       </section>
 
       <section class="services">
-        <div class="container">
-          <h2 class="title-section">Чим ми займаємося</h2>
-          <ul class="services-list-item">
-            <li>
+        <div class="container services-container">
+          <h2 class="title-section service-section-title">Чим ми займаємося</h2>
+          <ul class="services-list">
+            <li class="services-list-card">
               <img src="./images/cod.jpg" alt="программирование" width="370" />
             </li>
-            <li>
+            <li class="services-list-card">
               <img src="./images/test.jpg" alt="тестирование" width="370" />
             </li>
-            <li><img src="./images/design.jpg" alt="дизайн" width="370" /></li>
+            <li class="services-list-card">
+              <img src="./images/design.jpg" alt="дизайн" width="370" />
+            </li>
           </ul>
         </div>
       </section>
 
       <section class="team">
-        <div class="container">
+        <div class="container section-team-container">
           <h2 class="title-section">Наша команда</h2>
           <ul class="team-list">
-            <li>
+            <li class="team-list-card">
               <img
                 src="./images/card1.jpg"
                 alt="на фото дизайнер, Дем'яненко Ігор"
                 width="270"
               />
-              <h3>Ігор Дем'яненко</h3>
+              <h3 class="list-card-name">Ігор Дем'яненко</h3>
               <p lang="en">Product Designer</p>
             </li>
-            <li>
+            <li class="team-list-card">
               <img
                 src="./images/card2.jpg"
                 alt="на фото розробник,Репіна Ольга"
                 width="270"
               />
-              <h3>Ольга Рєпіна</h3>
+              <h3 class="list-card-name">Ольга Рєпіна</h3>
               <p lang="en">Frontend Developer</p>
             </li>
-            <li>
+            <li class="team-list-card">
               <img
                 src="./images/card3.jpg"
                 alt="на фото Тарасов Микола,відділ маркетингу"
                 width="270"
               />
-              <h3>Микола Тарасов</h3>
+              <h3 class="list-card-name">Микола Тарасов</h3>
               <p lang="en">Marketing</p>
             </li>
-            <li>
+            <li class="team-list-card">
               <img
                 src="./images/card4.jpg"
                 alt="на фото Єрмаков Михайло, дизайнер"
                 width="270"
               />
-              <h3>Михайло Єрмаков</h3>
+              <h3 class="list-card-name">Михайло Єрмаков</h3>
               <p lang="en">UI Designer</p>
             </li>
           </ul>
@@ -155,7 +159,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="container">
+      <div class="container page-footer-container">
         <a class="footer-logo" href="./index.html"
           ><span class="footer-logo-web">Web</span>Studio</a
         >
@@ -169,10 +173,12 @@
             >
           </p>
           <ul class="bottom-contacts">
-            <li>
+            <li class="bottom-contacts-item">
               <a href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="bottom-contacts-item">
+              <a href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
           </ul>
         </address>
       </div>
