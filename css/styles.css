@@ -44,16 +44,14 @@ ol {
   padding-right: 15px;
 }
 
-/* .link {
+.link {
   text-decoration: none;
 }
 
-.list {
-  list-style: none;
-}
-*/
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 li {
@@ -88,18 +86,6 @@ li {
   text-decoration: none;
 }
 .header-logo-web {
-  color: var(--accent-color);
-}
-
-.footer-logo {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  color: var(--primary-white-color);
-  text-decoration: none;
-}
-.footer-logo-web {
   color: var(--accent-color);
 }
 /* ========= / HEADER ========= */
@@ -170,8 +156,6 @@ li {
 
 .solution-order-button {
   margin-top: 30px;
-  width: 216px;
-  height: 50px;
 }
 
 .odrder-button {
@@ -186,6 +170,10 @@ li {
   border-radius: 4px;
   cursor: pointer;
   text-align: center;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
 }
 /* ========= / SOLUTION ========= */
 
@@ -223,7 +211,7 @@ li {
   line-height: 2;
   color: var(--primary-text-color);
 }
-/* ========= / SPECIFICS ========= */
+/* ========= /SPECIFICS ========= */
 
 /* =========  SERVICES ========= */
 .services-container {
@@ -235,7 +223,7 @@ li {
 }
 
 .services-list-card {
-  flex-basis: calc((100% - 60) / 3);
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .services-list {
@@ -266,8 +254,23 @@ li {
 }
 
 .team-list-card {
-  flex-basis: calc((100% - 90) / 4);
+  width: 270px;
+  background: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
+
+.team-card-bottom {
+  padding-top: 30px;
+  padding-right: auto;
+  padding-left: auto;
+  margin-bottom: 30px;
+}
+
+/* .team-card-job-title {
+  padding-top: 10px;
+} */
 
 .team h3 {
   font-weight: 500;
@@ -276,21 +279,20 @@ li {
   color: var(--title-text-color);
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 30px;
 }
 
 .team p {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.2px;
   color: var(--primary-text-color);
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 10px;
+  padding-top: 10px;
 }
 /* ========= /TEAM ========= */
 
 /* ========= FOOTER ========= */
-
 .page-footer {
   background-color: var(--solution-section-color);
 }
@@ -330,17 +332,36 @@ li {
 .bottom-contacts a:hover {
   color: var(--accent-color);
 }
+
+.footer-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--primary-white-color);
+  text-decoration: none;
+}
+.footer-logo-web {
+  color: var(--accent-color);
+}
 /* ========= /FOOTER ========= */
 
 /* ==================================== / INDEX HTML========================= */
 
 /* ====================================== PORTFOLIO HTML ==================== */
 
-/* ========= FILTERS ========= */
+/* ========= PROJECTS ========= */
+.projects {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.filters-container {
+  display: flex;
+  column-gap: 8px;
+  justify-content: center;
+}
 
 .filters button {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -349,15 +370,42 @@ li {
   color: var(--title-text-color);
   background: var(--btn-filter-background-color);
   cursor: pointer;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: none;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 .filters button:hover,
 .filters button:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
-/* ========= / FILTERS ========= */
 
-/* ========= SECTION GALERY ========= */
+/* ========= GALERY ========= */
+
+.gallery {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.gallery-card {
+  width: 370px;
+  background: var(--primary-white-color);
+  border: 1px solid #eeeeee;
+}
+
+.gallery-card-bottom {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  background-color: var(--primary-white-color);
+}
 
 .gallery h2 {
   font-weight: 700;
@@ -369,7 +417,9 @@ li {
 .gallery p {
   font-size: 16px;
   line-height: 1.9;
+  color: var(--primary-text-color);
+  margin-top: 4px;
 }
-/* ========= / SECTION GALERY ========= */
+/* ========= /GALERY ========= */
 
 /* ========= / PORTFOLIO HTML========= */
