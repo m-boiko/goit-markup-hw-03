@@ -8,6 +8,7 @@
   --btn-filter-background-color: #f5f4fa;
   --solution-section-color: #2f303a;
   --background-color: #f5f4fa;
+  --portfolio-nav-border-color: #ececec;
 }
 /* =========/PRIMARY COLORS========= */
 
@@ -63,6 +64,7 @@ li {
   padding-bottom: 25px;
   border-bottom: 1px solid var(--accent-color);
 }
+
 .page-header-container {
   display: flex;
   align-items: center;
@@ -113,6 +115,20 @@ li {
 
 .contact-mail {
   margin-left: auto;
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+.mail-phone-link .contact-mail:focus,
+.mail-phone-link .contact-mail:hover {
+  color: var(--accent-color);
+}
+.contact-phone {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+.mail-phone-link .contact-phone:focus,
+.mail-phone-link .contact-phone:hover {
+  color: var(--accent-color);
 }
 
 .navigation .link:focus,
@@ -125,19 +141,21 @@ li {
 }
 /* ========= /HEADER ========= */
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* ========= SOLUTION ========= */
 .solution-container {
   display: flex;
   flex-direction: column;
-  padding-top: 200px;
-  padding-bottom: 200px;
   justify-content: center;
   align-items: center;
 }
 
 .solution {
   background-color: var(--solution-section-color);
-  height: 600px;
 }
 
 .solution-title {
@@ -174,14 +192,13 @@ li {
   padding-right: 32px;
   padding-bottom: 10px;
   padding-left: 32px;
+  border: none;
 }
 /* ========= / SOLUTION ========= */
 
 /* ========= SPECIFICS ========= */
 .specifics-container {
   display: flex;
-  padding-bottom: 94px;
-  padding-top: 94px;
 }
 .specifics-list {
   display: flex;
@@ -214,14 +231,19 @@ li {
 /* ========= /SPECIFICS ========= */
 
 /* =========  SERVICES ========= */
-.services-container {
+/* .services-container {
   display: flex;
   flex-direction: column;
-  padding-bottom: 94px;
   align-items: center;
   align-content: start;
-}
+} */
 
+.services {
+  padding-top: 0;
+}
+.title-section-service {
+  text-align: center;
+}
 .services-list-card {
   flex-basis: calc((100% - 60px) / 3);
 }
@@ -235,24 +257,17 @@ li {
 
 /* ========= TEAM ========= */
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: var(--background-color);
 }
 
-.section-team-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: start;
+.team-section-title {
+  text-align: center;
 }
-
 .team-list {
   display: flex;
   margin-top: 50px;
   column-gap: 30px;
 }
-
 .team-list-card {
   width: 270px;
   background: var(--primary-white-color);
@@ -263,14 +278,8 @@ li {
 
 .team-card-bottom {
   padding-top: 30px;
-  padding-right: auto;
-  padding-left: auto;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
-
-/* .team-card-job-title {
-  padding-top: 10px;
-} */
 
 .team h3 {
   font-weight: 500;
@@ -284,27 +293,25 @@ li {
 .team p {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.2px;
+  line-height: 1.2;
   color: var(--primary-text-color);
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 10px;
+  margin-top: 10px;
 }
 /* ========= /TEAM ========= */
 
 /* ========= FOOTER ========= */
 .page-footer {
   background-color: var(--solution-section-color);
-}
-
-.page-footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.link-address {
-  margin-top: 20px;
+.bottom-addres {
+  margin-bottom: 20px;
 }
+
 .link-address a {
   font-style: normal;
   font-family: "Roboto";
@@ -324,7 +331,7 @@ li {
 .bottom-contacts a {
   font-family: "Roboto";
   line-height: 2;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--primary-text-color);
   text-decoration: none;
   font-style: normal;
 }
@@ -349,7 +356,9 @@ li {
 /* ==================================== / INDEX HTML========================= */
 
 /* ====================================== PORTFOLIO HTML ==================== */
-
+.portfolio-header {
+  border-bottom: 1px solid var(--portfolio-nav-border-color);
+}
 /* ========= PROJECTS ========= */
 .projects {
   padding-top: 94px;
@@ -396,7 +405,6 @@ li {
 .gallery-card {
   width: 370px;
   background: var(--primary-white-color);
-  border: 1px solid #eeeeee;
 }
 
 .gallery-card-bottom {
@@ -404,7 +412,8 @@ li {
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
-  background-color: var(--primary-white-color);
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .gallery h2 {
