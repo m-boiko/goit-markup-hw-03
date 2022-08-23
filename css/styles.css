@@ -141,11 +141,6 @@ li {
 }
 /* ========= /HEADER ========= */
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 /* ========= SOLUTION ========= */
 .solution-container {
   display: flex;
@@ -156,6 +151,8 @@ li {
 
 .solution {
   background-color: var(--solution-section-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .solution-title {
@@ -197,6 +194,11 @@ li {
 /* ========= / SOLUTION ========= */
 
 /* ========= SPECIFICS ========= */
+.specifics {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .specifics-container {
   display: flex;
 }
@@ -222,24 +224,20 @@ li {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-bottom: 10px;
 }
 .specifics p {
   font-style: normal;
-  line-height: 2;
+  line-height: 1.7;
   color: var(--primary-text-color);
 }
 /* ========= /SPECIFICS ========= */
 
 /* =========  SERVICES ========= */
-/* .services-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: start;
-} */
 
 .services {
-  padding-top: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .title-section-service {
   text-align: center;
@@ -258,6 +256,8 @@ li {
 /* ========= TEAM ========= */
 .team {
   background-color: var(--background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-section-title {
@@ -308,10 +308,6 @@ li {
   padding-bottom: 60px;
 }
 
-.bottom-addres {
-  margin-bottom: 20px;
-}
-
 .link-address a {
   font-style: normal;
   font-family: "Roboto";
@@ -347,6 +343,8 @@ li {
   line-height: 1.2;
   color: var(--primary-white-color);
   text-decoration: none;
+  margin-bottom: 20px;
+  display: block;
 }
 .footer-logo-web {
   color: var(--accent-color);
